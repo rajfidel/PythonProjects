@@ -21,4 +21,14 @@ age = raw_input()	#The function reads a line from input, converts it to string (
 from sys import argv
 script, first, second, third = argv #this assigns script and first 3 arguments to the variables
 txt = open(filename) 	#opens file object
-print txt.read()		#prints contents of file
+print txt.read()		#prints complete contents of file
+txt.seek(0)				#resets cursor position to begining of file
+print txt.readline()	#prints one line of the file from the current cursor position
+from os.path import exists
+exists(to_file)			#returns if the file to_file exists
+len(in_data)			#returns the lenght of an object
+def print_two(*args):		#function definition like with argv
+	arg1, arg2 = args
+def print_two_again(arg1, arg2):		#function definition with finite args
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
+int(raw_input())		#converts to int from raw values
